@@ -20,6 +20,11 @@ body {
     font-family: 'Outfit', sans-serif;
 }
 
+/* Reusable CSS */
+.soft-blue {
+    color:hsl(215, 51%, 70%);
+}
+
 .card {
     background: hsl(216, 50%, 16%);
     margin: 10% 10% 3%;
@@ -88,7 +93,7 @@ body {
 }
 
 .card-title:hover:active, em:hover:active { 
-    color: hsl(178, 100%, 50%);
+    background-color: hsl(178, 100%, 50%);
 }
 
 .card-text { 
@@ -111,12 +116,7 @@ body {
     font-weight: 400;
 }
 
-.time-remaining {
-    color: hsl(215, 51%, 70%);
-}
-
 hr{
-    color: hsl(215, 51%, 70%);
     margin-top: 0;
 }
 
@@ -129,7 +129,6 @@ hr{
 }
 
 .avatar-detail {
-    color: hsl(215, 51%, 70%);
     margin-top: 22px;
 }
 
@@ -139,7 +138,6 @@ em {
 }
 
 .attribution {
-    color: hsl(215, 51%, 70%);
     font-size: 12px;
     text-align: center;
     margin-bottom: 10px;
@@ -148,6 +146,53 @@ em {
 
 .attribution a {
     text-decoration: none;
-    color: hsl(215, 51%, 70%);
     font-weight: bold;
+}
+
+@media only screen and (min-width: 490px) and (max-width: 768px){
+    .avatar-img {
+        margin-bottom: 10px;
+    }
+
+    .avatar-detail {
+        padding-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .body{
+        text-align: center;
+    }
+
+    .card {
+        width: 50%;
+        margin: 1% auto;
+    }
+    
+    .avatar-img {
+        margin-bottom: 20px;
+    }
+    
+    .avatar-detail {
+        padding-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .body{
+        text-align: center;
+    }
+
+    .card {
+        width: 30%;
+        margin: 1% auto;
+    }
+    
+    .avatar-img {
+        margin-bottom: 5px;
+    }
+    
+    .avatar-detail {
+        padding-top: 5px;
+    }
 }
